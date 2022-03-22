@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:827b43770dc8e1f540170fab2b9175ac9726923d3b221df8ad07b6c91c0ea729
-size 730
+fileFormatVersion: 2
+guid: 03c769dde70c865439e69afa01c12e3c
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: 7
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 7
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  alphaIsTransparency: 0
+  textureType: 5
+  buildTargetSettings: []
+  userData: 
