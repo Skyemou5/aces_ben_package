@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1057800321a786c9c61b8802275503baca2a0285d5bf42966f3f451d12c74427
-size 390
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class ShipExplodeBehanvior : MonoBehaviour
+{
+    [SerializeField]
+    private simple_vfx_data _explodeEffect;
+    
+    
+
+    
+    public void Explode(InputAction.CallbackContext context)
+    {
+        Debug.Log(context);
+        _explodeEffect.effect.Play();
+    }
+    
+}

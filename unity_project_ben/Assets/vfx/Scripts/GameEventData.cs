@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:694d5f8693a3bc750d65521e65a9536111c7ef32547c94dcf1789df84de161e4
-size 555
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+[System.Serializable]
+public class GameEventData
+{
+    private List<GameEventListener> listeners = new List<GameEventListener>();
+ 
+    public virtual void Raise()
+    {
+        for(int i = listeners.Count -1; i >= 0; i--)
+            listeners[i].OnEventRaised();
+    }
+ 
+    public virtual void RegisterListener(GameEventListener listener) => listeners.Add(listener);
+ 
+    public virtual void UnregisterListener(GameEventListener listener) => listeners.Remove(listener);
+}

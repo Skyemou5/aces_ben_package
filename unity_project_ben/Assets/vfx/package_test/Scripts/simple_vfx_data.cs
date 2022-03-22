@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34de7d21c7627de779640b9be9b36f3a436254e7547cff9ace260a0e52adb54d
-size 951
+using System;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.VFX;
+
+[System.Serializable]
+public class simple_vfx_data 
+{
+    //
+    // events
+    public UnityEvent onDestroy;
+
+    public Action<bool> onValueChanged;
+    
+    
+    
+    public VisualEffect effect;
+
+    public DestroyObject destroy;
+    
+    public GameObject originalObj;
+
+    public GameObject shatteredObj;
+
+    private bool _destroyed;
+
+    public bool destroyed
+    {
+        get
+        {
+            return _destroyed;
+        }
+        set
+        {
+            if(destroyed == value) return;
+            
+            _destroyed = value;
+            
+            //onValueChanged?.Invoke(_destroyed);
+        }
+    }
+    
+    // methods
+    public void DestroyAction()
+    {
+        
+        destroyed = true;
+
+
+        onDestroy?.Invoke();
+        destroy.ManualBreak();
+        effect.SendEvent("start");
+        //onValueChanged -= setActiveObjects;
+    }
+
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ef763302c2676abaefab27e746cdabdbfc8188dea217332230f2a595335913b
-size 419
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class GameEventListener : MonoBehaviour
+{
+    public GameEvent Event;
+    public UnityEvent Response;
+    
+ 
+    private void OnEnable() => Event.Event.RegisterListener(this);
+ 
+    private void OnDisable() => Event.Event.UnregisterListener(this);
+ 
+    public void OnEventRaised() => Response.Invoke();
+}

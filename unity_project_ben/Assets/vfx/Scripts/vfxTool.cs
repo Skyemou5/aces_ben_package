@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:acb80969e8617ac444554a7a50a56f8b4e7302afb1bfc9988c29499441da9440
-size 491
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public static class vfxTool
+{
+    public enum VFXCOMMANDS
+    {
+        START,
+        PAUSE,
+        STOP,
+    }
+
+    public static void START()
+    {
+        
+    }
+
+    public static void PAUSE()
+    {
+        
+    }
+
+    public static void STOP()
+    {
+        
+    }
+
+
+    public static void RunCommands()
+    {
+        
+    }
+
+    [System.Serializable]
+    public class VFXCommand
+    {
+        
+    }
+}

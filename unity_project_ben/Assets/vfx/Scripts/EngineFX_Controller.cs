@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b109c350307aa78f354c0d368cd5a54cc8bc8ef0680a8d79bac8c1ffccaaa12c
-size 385
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Experimental.VFX;
+using UnityEngine.VFX;
+
+public class EngineFX_Controller : MonoBehaviour
+{
+    [SerializeField]private VisualEffect visualEffect;
+
+    [SerializeField] private float testflield;
+
+    private void Update()
+    {
+        //visualEffect.SetFloat("");
+    }
+}

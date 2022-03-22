@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a0f05f48d19f8260c321f0293490c6dd96032cfe5b122c25e6d0ecb612e5d0a
-size 236
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(menuName ="ben/vfx/simple_vfx_data_SO")]
+public class simple_vfx_data_SO : ScriptableObject
+{
+    public simple_vfx_data data;
+    
+    
+}
