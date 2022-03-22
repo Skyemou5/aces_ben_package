@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5be26617faf22df1e7aeb3f83fe333c376c974756e424c448a42b36ff7f251e2
-size 537
+{
+  "name": "com.ben.package",
+  "version": "1.2.3",
+  "displayName": "ben package",
+  "description": "This is an example package",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "dependencies": {
+
+ },
+ "keywords": [
+    "sidefx",
+    "houdini",
+    "procedural"
+  ],
+  "author": {
+    "name": "Ben",
+    "email": "unity@example.com",
+    "url": "https://www.sidefx.com"
+  }
+}
+
+
