@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.VFX;
@@ -29,6 +30,7 @@ public class simple_vfx_data
         get
         {
             return _destroyed;
+            
         }
         set
         {
